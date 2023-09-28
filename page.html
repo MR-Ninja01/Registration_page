@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+
+    <style>
+        .book {
+            position: relative;
+            border-radius: 10px;
+            width: 220px;
+            height: 300px;
+            background-color: whitesmoke;
+            -webkit-box-shadow: 1px 1px 12px #000;
+            box-shadow: 1px 1px 12px #000;
+            -webkit-transform: preserve-3d;
+            -ms-transform: preserve-3d;
+            transform: preserve-3d;
+            -webkit-perspective: 2000px;
+            perspective: 2000px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            color: #000;
+        }
+
+        .cover {
+            top: 0;
+            position: absolute;
+            background-color: lightgray;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+            -webkit-transform-origin: 0;
+            -ms-transform-origin: 0;
+            transform-origin: 0;
+            -webkit-box-shadow: 1px 1px 12px #000;
+            box-shadow: 1px 1px 12px #000;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .book:hover .cover {
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transform: rotatey(-80deg);
+            -ms-transform: rotatey(-90deg);
+            transform: rotatey(-90deg);
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+
+       .area
+       {
+         height:500px;
+         width: 400px;
+         border-radius:10px;
+        
+         margin: 0 auto;
+         margin-top: 70px;
+       }
+
+       .book
+       {
+        margin: 0 auto;
+         background-color: lightcyan;
+        height: 500px;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 20px;
+        width: 400px;
+        
+       }
+
+
+       .cover
+       {
+        background-image: url("best.png");
+          background-size:cover;
+       }
+
+       .cover p
+       {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        margin-top: 120px;
+        font-weight: 400;
+        color:yellow;
+
+     font:bold;
+       }
+
+       
+
+      table tr td
+    {
+        position: relative;
+        top:-30px;
+        padding-left: 18px;
+        padding-top: 14px;
+    }
+
+    input
+    {
+        height: 20px;
+    }
+
+    h2 
+    {
+        position: relative;
+        top:-5px;
+        left:10px;
+        letter-spacing: 0.1em;
+    }
+
+    h2:hover
+    {
+       color:blue;
+    }
+
+
+    #btn
+    {
+        width: 100px;
+        height: 30px;
+        position: relative;
+        left:70px;
+        border-radius: 10px;
+        background:khaki;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    
+<div class="area">
+    <div class="book">
+
+        <div class="login">
+          <h2>Student&ensp;Registration</h2>
+            
+        <form action="">
+            <table>
+
+                <tr>
+                    <td>Student_Id</td>
+                    <td><input type="text" name="sid" placeholder="Enter Student name" required="true"></td>
+                 </tr>
+
+                <tr>
+                    <td>First_Name</td>
+                    <td><input type="text" name="fname" placeholder="Enter First name" required="true" ></td>
+                </tr>
+
+                <tr>
+                <td>Last_Name</td>
+                <td><input type="text" name="lname" placeholder="Enter last name"  required="true"></td>
+                </tr>
+
+
+                 <tr>
+                    <td>Dob</td>
+                    <td><input type="date" name="dob" id=""></td>
+                 </tr>
+
+                 <tr>
+                    <td>Contact_no</td>
+                    <td><input type="text" name="mob" placeholder="Enter Contact no"  required="true"></td>
+                    </tr>
+
+                  <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id=""></td>
+                  </tr>                
+
+                  <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" id=""></td>
+                  </tr>
+
+                  <tr>
+                    <td>Branch</td>
+                    <td><select name="branch">
+                        <option selected>Select-Branch</option>
+                        <option selected>Computer Science</option>
+                        <option selected>Information Technology</option>
+                        <option selected>Machenical </option>
+                        <option selected>Electrical</option>
+                        <option selected>Electronics</option>
+                    </select></td>
+                  </tr>
+
+                  <tr>
+                    <td>Address</td>
+                    <td><input type="textarea" name="address" placeholder="Enter Address"> </td>
+                  </tr>
+  
+                   <tr> <td><input type="submit" id="btn" value="Submit"></td></tr> 
+
+            </table>
+        </form>
+        </div>
+        <div class="cover">
+            <p>Login🫡 <br>🫡Page</p>
+            
+            
+             
+
+        </div>
+    </div>
+</div>
+
+    
+
+</body>
+
+</html>
